@@ -161,27 +161,27 @@ bash scripts stage2/eval_snr.sh
 
 | Model         | Zero-Shot Language  | Training data (# of Languages)  |
 |--------------|:----------:|:------------------:|
-| [ckpt.pt]() |       Arabic(ara)       |        81           | 
-| [ckpt.pt]() |        German(deu)            |     81           | 
-| [ckpt.pt]() |        Greek(ell)       | 81           | 
-| [ckpt.pt]() |        Spanish(spa)       | 81           | 
-| [ckpt.pt]() |        French(fra)       | 81           | 
-| [ckpt.pt]() |        Italian(ita)       | 81           | 
-| [ckpt.pt]() |        Portuguese(por)       | 81           | 
-| [ckpt.pt]() |        Russian(rus)       | 81           | 
-| [ckpt.pt]() |        All      | 82           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/mph3q2rtgwcb0sn9na47g/checkpoint_best.pt?rlkey=r6t9l2l27cmtgj10yt1uio5mi&st=erysg487&dl=0) |       Arabic(ara)       |        81           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/5pbsx6n882prjltisxd84/checkpoint_best.pt?rlkey=8ujitzdmhbulb2dman1xi6z9l&st=7adl87e4&dl=0) |        German(deu)            |     81           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/9euaiuv512bbjb5pj0dgi/checkpoint_best.pt?rlkey=m2z42myzvmmqkupg5757tbp92&st=p0blvuog&dl=0) |        Greek(ell)       | 81           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/4itcjvwxi96zd48z7k984/checkpoint_best.pt?rlkey=sm0b2yvu9eyp3mvkrpvv9ehnt&st=s16uuqy9&dl=0) |        Spanish(spa)       | 81           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/i7k9jlk2z36kpbr1yv20s/checkpoint_best.pt?rlkey=txupq7eop1ikgmntak131ldwj&st=akzfr61a&dl=0) |        French(fra)       | 81           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/y2qwsuftnwz3zbkor1cn8/checkpoint_best.pt?rlkey=0y0ss30zjyfrxrfzrjo5520c5&st=3quyoz2p&dl=0) |        Italian(ita)       | 81           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/9mdet0q1vbif6gi7z9wgx/checkpoint_best.pt?rlkey=gtwmvivghzql9q2tc7fv0jm3x&st=a8uvdprl&dl=0) |        Portuguese(por)       | 81           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/cq8v9k6qhejl04pa1qdzr/checkpoint_best.pt?rlkey=arbmj1ui1mmpokykc4stev1mk&st=wjevh56r&dl=0) |        Russian(rus)       | 81           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/p6i141tfrp0kbqiu1cepy/checkpoint_best.pt?rlkey=hyck9668w9bgx0io2tkc6rdux&st=j37n3fpg&dl=0) |        All      | 82           | 
 
 
 > ```Zero-AVSR```
 
 | Model         | Zero-Shot Language  | Training data (# of Languages)  |
 |--------------|:----------:|:------------------:|
-| [ckpt.pt]() |       Arabic(ara)       |        81           | 
-| [ckpt.pt]() |        German(deu)            |     81           | 
-| [ckpt.pt]() |        Greek(ell)       | 81           | 
-| [ckpt.pt]() |        Spanish(spa)       | 81           | 
-| [ckpt.pt]() |        French(fra)       | 81           | 
-| [ckpt.pt]() |        Italian(ita)       | 81           | 
-| [ckpt.pt]() |        Portuguese(por)       | 81           | 
-| [ckpt.pt]() |        Russian(rus)       | 81           | 
-| [ckpt.pt]() |        All      | 82           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/bw0jwqo3widniiv4jm6ug/checkpoint_best.pt?rlkey=1agqfao8rfch2epa9suxfe8g9&st=xpeyc187&dl=0) |       Arabic(ara)       |        81           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/5yu1cinmwtkq30yjom55w/checkpoint_best.pt?rlkey=die6brzvzb6kwi8qglxwrtw5s&st=2zasun4c&dl=0) |        German(deu)            |     81           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/0h7chny92u024dhz7ps6n/checkpoint_best.pt?rlkey=hqtumplvoey956xplx1emdkb4&st=reurwhgc&dl=0) |        Greek(ell)       | 81           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/pn57wyicai0ilsia0bmjl/checkpoint_best.pt?rlkey=fe82psi10aeeypyusgb4r5byz&st=cjw4xbyn&dl=0) |        Spanish(spa)       | 81           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/02uxoa555flwld4kenqqw/checkpoint_best.pt?rlkey=a9fl6bkkfwr07tktxvzh5thbl&st=99p6wx4t&dl=0) |        French(fra)       | 81           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/49qndou53mwyz801zcoxq/checkpoint_best.pt?rlkey=qj1k26md93zmgrxp6qcvljdnl&st=lbowscks&dl=0) |        Italian(ita)       | 81           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/z82fg2jgdniwncjn32mkm/checkpoint_best.pt?rlkey=6yobx01l2tx85gfhg02o3dzlk&st=39ytp0wn&dl=0) |        Portuguese(por)       | 81           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/3g0kog5f98wo9jey7fbyn/checkpoint_best.pt?rlkey=sp1nt4j6k8tu7oykh3tddnbhx&st=76l2iiim&dl=0) |        Russian(rus)       | 81           | 
+| [ckpt.pt](https://www.dropbox.com/scl/fi/4t6b3zrw6d2d3iwfrp37s/checkpoint_best.pt?rlkey=g01nl8yafbigyu5h0kweat106&st=7cj4ggu2&dl=0) |        All      | 82           | 
