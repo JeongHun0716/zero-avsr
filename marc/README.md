@@ -55,7 +55,7 @@ vox2/
 ```
 
 
-### MuaViC
+### MuAViC
 ```
 muavic/
 └── {lang}/   # {lang} ∈ {ar, de, el, es, fr, it, pt, ru}
