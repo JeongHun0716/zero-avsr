@@ -1,11 +1,9 @@
-https://www.dropbox.com/scl/fi/9nksl4rgykxd9m8pi5kds/manifests.tar.gz?rlkey=f6ri1l2qezays4e5ja0ntc7yc&st=xo8fiaky&dl=0
-
-
 ## Dataset
 We propose Mulitlingual Audio-Visual Romanized Corpus (MARC), the Roman transcription labels for 2,916 hours of audiovisual speech data across 82 languages.
 All manifests files for training and evaluation are available for download from [this link](https://www.dropbox.com/scl/fi/9nksl4rgykxd9m8pi5kds/manifests.tar.gz?rlkey=f6ri1l2qezays4e5ja0ntc7yc&st=1k2lyjpq&dl=0).
 
 Download the manifests.tar.gz file into the marc folder and extract it, and then please run: ```tar -xzvf manifests.tar.gz```
+
 This will result in the following directory structure:
 
 ```
@@ -19,7 +17,16 @@ marc/
 └── avspeech_train_segments.txt   # Metadata file for AVSpeech training segments
 ```
 
-Then,
+Then, you should update the ```.tsv files``` with the absolute paths to the dataset directories using the provided script. This ensures that all dataset references point to the correct locations on your system.
+
+```bash
+python update_dataset_paths.py --input_dir ./ --vox2 'path for the VoxCeleb2 dataset' --muavic 'path for the MuAViC dataset' --lrs3 'path for the LRS3 dataset' --avs 'path for the AVSpeech dataset'
+```
+
+For example:
+```bash
+python update_dataset_paths.py --input_dir ./ --vox2 /Dataset/vox2 --muavic /Dataset/muavic --lrs3 /Dataset/lrs3 --avs /Dataset/avs
+```
 
 
 ### LRS3
