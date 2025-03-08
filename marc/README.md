@@ -1,4 +1,4 @@
-## Dataset
+## Dataset Preparation
 We propose Mulitlingual Audio-Visual Romanized Corpus (MARC), the Roman transcription labels for 2,916 hours of audiovisual speech data across 82 languages.
 All manifests files for training and evaluation are available for download from [this link](https://www.dropbox.com/scl/fi/05hbxmxo0ltu9thpxszn1/manifests.tar.gz?rlkey=befdyzsjy9g7bmg0k41ad90o9&st=j9reloy4&dl=0).
 
@@ -13,11 +13,11 @@ marc/
 │   │   ├── all/           # All training/test files for stage1
 │   │   └── zero_shot/     # Zero-shot experiment files for stage1
 │   └── stage2/            # Files for zero-avsr training and evaluation
-└── update_dataset_paths.py   # Script to update placeholders to absolute paths in TSV files
+└── update_dataset_paths.py   # Script to update placeholders to absolute paths in tsv files
 └── avspeech_train_segments.txt   # Metadata file for AVSpeech training segments
 ```
 
-Before running any training or evaluation, you must update the dataset file paths in the TSV files. These TSV files contain placeholders (e.g., ```{LRS3_ROOT}```) that need to be replaced with the absolute paths to your local copies of the datasets. The provided script (```update_dataset_paths.py```) automates this process, ensuring that all references in the TSV files point to the correct locations on your system.
+Before running any training or evaluation, you must update the dataset file paths in the ```tsv files```. These ```tsv files``` contain placeholders (e.g., ```{LRS3_ROOT}```) that need to be replaced with the absolute paths to your local copies of the datasets. The provided script (```update_dataset_paths.py```) automates this process, ensuring that all references in the ```tsv files``` point to the correct locations on your system.
 
 The required datasets are:
 
@@ -54,7 +54,7 @@ python update_dataset_paths.py --input_dir ./ --vox2 /Dataset/vox2 --muavic /Dat
 
 The above command updates the placeholder paths in the ```tsv files``` to your absolute dataset paths.
 
-Each TSV file contains one line per data sample, with the following fields separated by a tab ```(\t)```:
+Each ```tsv files``` contains one line per data sample, with the following fields separated by a tab ```(\t)```:
 
 * **language**
 * **video_path**
