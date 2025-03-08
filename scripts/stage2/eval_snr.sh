@@ -12,7 +12,7 @@ SRC_PTH=$ROOT/stage2
 
 MODEL_PATH=$ROOT/pretrained_models/zero-avsr/all/checkpoint_best.pt
 LLM_PATH=meta-llama/Llama-3.2-3B
-MANIFEST=$root/marc/manifest/stage2/
+MANIFEST=$ROOT/marc/manifest/stage2/
 
 for snr in 0
 do
