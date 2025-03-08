@@ -171,3 +171,8 @@ After downloading, make sure to place the models in the correct directories:
 | [ckpt.pt](https://www.dropbox.com/scl/fi/z82fg2jgdniwncjn32mkm/checkpoint_best.pt?rlkey=6yobx01l2tx85gfhg02o3dzlk&st=39ytp0wn&dl=0) |        Portuguese(por)       | 81           | 
 | [ckpt.pt](https://www.dropbox.com/scl/fi/3g0kog5f98wo9jey7fbyn/checkpoint_best.pt?rlkey=sp1nt4j6k8tu7oykh3tddnbhx&st=76l2iiim&dl=0) |        Russian(rus)       | 81           | 
 | [ckpt.pt](https://www.dropbox.com/scl/fi/4t6b3zrw6d2d3iwfrp37s/checkpoint_best.pt?rlkey=g01nl8yafbigyu5h0kweat106&st=7cj4ggu2&dl=0) |        All      | 82           | 
+
+
+
+## Acknowledgement
+This project is based on the [avhubert](https://github.com/facebookresearch/av_hubert), [espnet](https://github.com/espnet/espnet), [auto-avsr](https://github.com/mpc001/auto_avsr), and [fairseq](https://github.com/facebookresearch/fairseq) code. We would like to thank the developers of these projects for their contributions and the open-source community for making this work possible.
