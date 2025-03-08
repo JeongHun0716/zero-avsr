@@ -65,7 +65,6 @@ $ PYTHONPATH=./fairseq:./avhubert python
 
 ### Zero-AVSR
 ```bash
-$ cd stage2
 $ PYTHONPATH=./fairseq:./avhubert python
 >>> import fairseq, stage2
 >>> ckpt_path = "/path/to/the/av-romanizer-checkpoint.pt"
