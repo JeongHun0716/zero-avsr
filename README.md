@@ -45,8 +45,10 @@ marc/
 │   └── stage2/            # Files for zero-avsr training and evaluation
 └── update_dataset_paths.py   # Script to update placeholders to absolute paths in tsv files
 └── avspeech_train_segments.txt   # Metadata file for AVSpeech training segments
-
+'''
 More detailed information is provided in [marc](https://github.com/JeongHun0716/zero-avsr/tree/master/marc)
+
+
 
 
 
