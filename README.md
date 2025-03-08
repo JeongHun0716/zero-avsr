@@ -55,23 +55,19 @@ More detailed information is provided in [marc](https://github.com/JeongHun0716/
 ## Load a pretrained model
 ### AV-Romanizer
 ```bash
-$ cd stage1
-$ python
->>> import fairseq
->>> import model
+$ PYTHONPATH=./fairseq:./avhubert python
+>>> import fairseq, stage1
 >>> ckpt_path = "/path/to/the/av-romanizer-checkpoint.pt"
 >>> models, cfg, task = fairseq.checkpoint_utils.load_model_ensemble_and_task([ckpt_path])
 >>> model = models[0]
 ```
 
-
 ### Zero-AVSR
 ```bash
 $ cd stage2
-$ python
->>> import fairseq
->>> import model
->>> ckpt_path = "/path/to/the/zero-avsr-checkpoint.pt"
+$ PYTHONPATH=./fairseq:./avhubert python
+>>> import fairseq, stage2
+>>> ckpt_path = "/path/to/the/av-romanizer-checkpoint.pt"
 >>> models, cfg, task = fairseq.checkpoint_utils.load_model_ensemble_and_task([ckpt_path])
 >>> model = models[0]
 ```
