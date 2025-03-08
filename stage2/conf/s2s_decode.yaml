@@ -1,0 +1,29 @@
+common:
+  user_dir: ???
+  #fp16: true
+generation:
+  beam: 50
+  temperature: 1.0
+  max_len_a: 1.0
+  max_len_b: 0
+  lenpen: 1.0
+  lm_weight: 0
+
+common_eval:
+  results_path: ???
+  path: ???
+
+dataset:
+  max_tokens: 1000
+  gen_subset: test
+  num_workers: 0
+  #batch_size: 1
+
+override:
+  noise_prob: 0.0
+  noise_snr: 0
+  modalities: ???
+  llm_path: ???
+  av_romanizer_path: ???
+  use_speech_embs: false
+  use_roman_toks: false

@@ -1,0 +1,128 @@
+# @package _group_
+
+common:
+  fp16: true
+  log_format: json
+  log_interval: 100
+  tensorboard_logdir: tblog
+  seed: 1337
+  user_dir: ???
+  empty_cache_freq: 2000
+
+checkpoint:
+  save_interval_updates: 100
+  keep_interval_updates: 1
+  no_epoch_checkpoints: true
+  best_checkpoint_metric: wer
+  #maximize_best_checkpoint_metric: true
+
+
+distributed_training:
+  ddp_backend: legacy_ddp
+  distributed_backend: 'nccl'
+  distributed_world_size: 8
+  #distributed_port: 29671
+  nprocs_per_node: 8
+  find_unused_parameters: false
+
+  
+task:
+  _name: zero-avsr-task
+  is_s2s: true
+  data: ???
+  label_dir: ???
+  labels: ["wrd"]
+  normalize: true  # must be consistent with pre-training
+  single_target: true
+  fine_tuning: true
+  stack_order_audio: 4
+  tokenizer_bpe_name: sentencepiece
+  max_sample_size: 500
+  modalities: ["video","audio"]
+  image_aug: true
+  pad_audio: true
+  random_crop: false
+  noise_prob: 0.25
+  noise_snr: 0
+  noise_wav: ???
+  llm_path: ???
+  zero_shot: true
+  zero_shot_lang: deu
+
+dataset:
+  num_workers: 3
+  max_tokens: 1000
+  validate_interval: 1
+  train_subset: train
+  valid_subset: test
+
+
+criterion:
+  _name: zero-avsr-criterion
+  #report_accuracy: true
+  #label_smoothing: 0.1
+
+optimization:
+  max_epoch: 2
+  max_update: 30000
+  lr: [1e-4]
+  sentence_avg: true
+  update_freq: [1]
+  clip_norm: 1.0
+
+optimizer:
+  _name: adam
+  adam_betas: (0.9,0.98)
+  adam_eps: 1e-08
+
+lr_scheduler:
+  _name: cosine
+  warmup_updates: 500
+  min_lr: 1e-5
+  #final_lr_scale: 0.05
+
+model:
+  _name: zero-avsr
+  apply_mask: false
+  mask_selection: static
+  mask_length: 10
+  mask_other: 0
+  mask_prob: 0.75
+  mask_channel_selection: static
+  mask_channel_length: 64
+  mask_channel_other: 0
+  mask_channel_prob: 0.5
+  layerdrop: 0.1
+  dropout: 0.0
+  attention_dropout: 0.1
+  feature_grad_mult: 1.0
+  activation_dropout: 0.0
+  ###### Llama ######
+  target_modules : ???
+  llama_embed_dim: 3072
+  llm_path: meta-llama/Llama-3.2-3B
+  lora_rank: 16
+  lora_alpha: 32
+  ###### av-romanizer ######
+  av_romanizer_path : ???
+  av_romanizer_embed_dim: 1024
+  use_roman_tok: true
+  use_speech_emb: true
+  back_trans_prob: 0.3
+
+
+hydra:
+  job:
+    config:
+      override_dirname:
+        kv_sep: '-'
+        item_sep: '__'
+        exclude_keys:
+          - run
+          - task.data
+          - task.label_dir
+  run:
+    dir: ???
+  sweep:
+    dir: ???
+    subdir: ${hydra.job.config_name}__${hydra.job.override_dirname}
