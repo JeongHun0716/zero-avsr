@@ -1,6 +1,6 @@
 ## Dataset
 We propose Mulitlingual Audio-Visual Romanized Corpus (MARC), the Roman transcription labels for 2,916 hours of audiovisual speech data across 82 languages.
-All manifests files for training and evaluation are available for download from [this link](https://www.dropbox.com/scl/fi/9nksl4rgykxd9m8pi5kds/manifests.tar.gz?rlkey=f6ri1l2qezays4e5ja0ntc7yc&st=1k2lyjpq&dl=0).
+All manifests files for training and evaluation are available for download from [this link](https://www.dropbox.com/scl/fi/05hbxmxo0ltu9thpxszn1/manifests.tar.gz?rlkey=befdyzsjy9g7bmg0k41ad90o9&st=j9reloy4&dl=0).
 
 Download the manifests.tar.gz file into the marc folder and extract it, and then please run: ```tar -xzvf manifests.tar.gz```
 
@@ -17,7 +17,31 @@ marc/
 └── avspeech_train_segments.txt   # Metadata file for AVSpeech training segments
 ```
 
-Then, you should update the ```.tsv files``` with the absolute paths to the dataset directories using the provided script. This ensures that all dataset references point to the correct locations on your system.
+Before running any training or evaluation, you must update the dataset file paths in the TSV files. These TSV files contain placeholders (e.g., ```{LRS3_ROOT}```) that need to be replaced with the absolute paths to your local copies of the datasets. The provided script (```update_dataset_paths.py```) automates this process, ensuring that all references in the TSV files point to the correct locations on your system.
+
+The required datasets are:
+
+* **VoxCeleb2**  
+  Download from the [VoxCeleb2](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox2.html) website.
+
+* **MuAViC**  
+  Download from the [MuAViC](https://github.com/facebookresearch/muavic) dataset page.
+
+* **LRS3**  
+  Download from the [LRS3-TED](https://mmai.io/datasets/lip_reading/) dataset page.
+
+* **AVSpeech**  
+  Download from the [AVSpeech](https://looking-to-listen.github.io/avspeech/) dataset page.
+
+
+Once you have downloaded these datasets, you should pre-process every video clip to crop the mouth regions. You can follow the pre-processing instructions provided in [Auto-AVSR](https://github.com/mpc001/auto_avsr/tree/main/preparation).
+
+Note that for the LRS3 and VoxCeleb2 datasets, the facial landmarks are already provided in the Auto-AVSR repository. For MuAViC, facial landmarks can be found at [MuAViC GitHub](https://github.com/facebookresearch/muavic). Therefore, only for the AVSpeech dataset, you will need to extract the landmarks yourself.
+
+
+
+After the pre-processing, update the ```tsv files``` with the absolute paths to the dataset directories using the provided script. This ensures that all dataset references point to the correct locations on your system.
+
 
 ```bash
 python update_dataset_paths.py --input_dir ./ --vox2 'path for the VoxCeleb2 dataset' --muavic 'path for the MuAViC dataset' --lrs3 'path for the LRS3 dataset' --avs 'path for the AVSpeech dataset'
@@ -28,6 +52,17 @@ For example:
 python update_dataset_paths.py --input_dir ./ --vox2 /Dataset/vox2 --muavic /Dataset/muavic --lrs3 /Dataset/lrs3 --avs /Dataset/avs
 ```
 
+The above command updates the placeholder paths in the ```tsv files``` to your absolute dataset paths.
+
+Each TSV file contains one line per data sample, with the following fields separated by a tab ```(\t)```:
+
+* **language**
+* **video_path**
+* **audio_path**
+* **num_video_frames**
+* **num_audio_frames**    
+
+Below are the expected directory structures for each dataset:
 
 ### LRS3
 ```
@@ -53,7 +88,6 @@ vox2/
     ├── dev_seg24s/
     └── test_seg24s/    
 ```
-
 
 ### MuAViC
 ```
