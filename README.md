@@ -86,7 +86,7 @@ $ PYTHONPATH=./fairseq:./avhubert python
 ### Train a new AV-Romanizer
 
 ```bash
-bash scripts stage1/train.sh
+bash scripts/stage1/train.sh
 ```
 
 ### Evaluation of the AV-Romanizer (Cascaded Zero-AVSR)
@@ -105,32 +105,32 @@ To evaluate the performance of Cascaded Zero-AVSR, follow these steps:
 3. **Run the Evaluation Script:**  
     Once your API key is set, execute the evaluation script by running:
     ```bash
-    bash scripts stage1/eval.sh
+    bash scripts/stage1/eval.sh
     ```
 4. **Run the Evaluation Script (under noisy environment):**
     ```bash
-    bash scripts stage1/eval_snr.sh
+    bash scripts/stage1/eval_snr.sh
     ```
 
 
 ### Train a new Zero-AVSR
 
 ```bash
-bash scripts stage2/train.sh
+bash scripts/stage2/train.sh
 ```
 
 ### Evaluation of the Zero-AVSR
 To evaluate the performance of Zero-AVSR, execute the evaluation script by running:
 
 ```bash
-bash scripts stage2/eval.sh
+bash scripts/stage2/eval.sh
 ```
 
 ### Evaluation of the Zero-AVSR, under noisy environment
 To evaluate the performance of Zero-AVSR, execute the evaluation script by running:
 
 ```bash
-bash scripts stage2/eval_snr.sh
+bash scripts/stage2/eval_snr.sh
 ```
 
 
