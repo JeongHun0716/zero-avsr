@@ -135,6 +135,12 @@ bash scripts stage2/eval_snr.sh
 3. Download the ```AV-Romanizer model``` from the link below, which can interact with various types of LLMs (e.g., gpt4o-mini, gpt4, llama, etc.) in a cascaded manner.
 4. Download the ```Zero-AVSR model``` from the link below, which is built on the LLaMA 3.2 3B model.
 
+After downloading, make sure to place the models in the correct directories:
+- The `large_vox_iter5.pt(AV-HuBERT)` model should be placed in the `pretrained_models/avhubert` folder.
+- The AV-Romanizer models should be placed in either `pretrained_models/av-romanizer/all` or `pretrained_models/av-romanizer/zero-shot`, depending on the model type.
+- The Zero-AVSR models should be placed in the `pretrained_models/zero-avsr` folder.
+
+
 > ```AV-Romanizer```
 
 | Model         | Zero-Shot Language  | Training data (# of Languages)  |
