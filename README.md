@@ -30,6 +30,7 @@ pip install --editable ./
 
 ## Preparation
 We propose Mulitlingual Audio-Visual Romanized Corpus (MARC), the Roman transcription labels for 2,916 hours of audiovisual speech data across 82 languages.
+
 All manifests files for training and evaluation are available for download from [this link](https://www.dropbox.com/scl/fi/05hbxmxo0ltu9thpxszn1/manifests.tar.gz?rlkey=befdyzsjy9g7bmg0k41ad90o9&st=j9reloy4&dl=0).
 
 Download the manifests.tar.gz file into the marc folder and extract it, and then please run: ```tar -xzvf manifests.tar.gz```
@@ -47,7 +48,6 @@ marc/
 └── avspeech_train_segments.txt   # Metadata file for AVSpeech training segments
 ```
 More detailed information is provided in [marc](https://github.com/JeongHun0716/zero-avsr/tree/main/marc)
-
 
 
 
