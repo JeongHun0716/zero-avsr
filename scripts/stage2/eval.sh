@@ -13,7 +13,7 @@ SRC_PTH=$ROOT/stage2
 MODEL_PATH=$ROOT/pretrained_models/zero-avsr/all/checkpoint_best.pt
 LLM_PATH=meta-llama/Llama-3.2-3B
 AV_ROMA_PATH=$ROOT/pretrained_models/av-romanizer/all/checkpoint_best.pt
-MANIFEST=$root/marc/manifest/stage2/
+MANIFEST=$ROOT/marc/manifest/stage2/
 
 OUT_PATH=$ROOT/results
 
