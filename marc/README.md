@@ -94,13 +94,13 @@ vox2/
 muavic/
 └── {lang}/   # {lang} ∈ {ar, de, el, es, fr, it, pt, ru}
     ├── audio/
-    │   ├── train_seg24s/
-    │   ├── valid_seg24s/
-    │   └── test_seg24s/
+    │   ├── train/
+    │   ├── valid/
+    │   └── test/
     └── video/
-        ├── train_seg24s/
-        ├── valid_seg24s/
-        └── test_seg24s/
+        ├── train/
+        ├── valid/
+        └── test/
 ```
 
 ### AVSpeech
