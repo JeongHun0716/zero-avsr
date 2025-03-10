@@ -9,11 +9,11 @@ This repository contains the PyTorch implementation of the following paper:
 ## Introduction
 Zero-AVSR is a zero-shot audio-visual speech recognition, which enables speech recognition in target languages without requiring any audio-visual speech data in those languages. 
 ### AV-Romanizer & Cascaded Zero-AVSR
-<div align="center"><img width="60%" src="images/image1.png?raw=true" /></div>
+<div align="center"><img width="80%" src="images/image1.png?raw=true" /></div>
 
 
 ### Zero-AVSR
-<div align="center"><img width="70%" src="images/image2.png?raw=true" /></div>
+<div align="center"><img width="90%" src="images/image2.png?raw=true" /></div>
 
 
 ## Environment Setup
