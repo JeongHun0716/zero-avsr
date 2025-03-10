@@ -73,7 +73,7 @@ $ PYTHONPATH=./fairseq:./avhubert python
 ```bash
 $ PYTHONPATH=./fairseq:./avhubert python
 >>> import fairseq, stage2
->>> ckpt_path = "/path/to/the/av-romanizer-checkpoint.pt"
+>>> ckpt_path = "/path/to/the/zero-avsr-checkpoint.pt"
 >>> models, cfg, task = fairseq.checkpoint_utils.load_model_ensemble_and_task([ckpt_path])
 >>> model = models[0]
 ```
