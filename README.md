@@ -5,10 +5,13 @@ This repository contains the PyTorch implementation of the following paper:
 ><br>
 > Authors: Jeong Hun Yeo*, Minsu Kim* (*equal contributor), Chae Won Kim, Stavros Petridis, Yong Man Ro<br>
 > **Paper Link**: [http://arxiv.org/abs/2503.06273](http://arxiv.org/abs/2503.06273)
-<div align="center"><img width="100%" src="image/image0.jpg?raw=true" /></div>
+
 
 ## Introduction
 Zero-AVSR is a zero-shot audio-visual speech recognition, which enables speech recognition in target languages without requiring any audio-visual speech data in those languages.
+<div align="center"><img width="100%" src="image/image0.jpg?raw=true" /></div>
+
+Here, we note that pre-trained Large Language Models already possess knowledge of modeling this Roman-grapheme mapping, and propose to leverage this comprehensive multilingual processing ability of LLMs in our proposed zero-shot AVSR framework.
 
 
 ### AV-Romanizer & Cascaded Zero-AVSR
