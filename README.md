@@ -4,7 +4,7 @@ This repository contains the PyTorch implementation of the following paper:
 > **Zero-AVSR: Zero-Shot Audio-Visual Speech Recognition with LLMs by Learning Language-Agnostic Speech Representations**<be>
 ><br>
 > Authors: Jeong Hun Yeo*, Minsu Kim* (*equal contributor), Chae Won Kim, Stavros Petridis, Yong Man Ro<br>
-> **Paper Link**: [Coming soon]
+> **Paper Link**: [http://arxiv.org/abs/2503.06273](http://arxiv.org/abs/2503.06273)
 
 ## Introduction
 Zero-AVSR is a zero-shot audio-visual speech recognition, which enables speech recognition in target languages without requiring any audio-visual speech data in those languages. 
