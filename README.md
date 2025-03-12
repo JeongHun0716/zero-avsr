@@ -3,7 +3,7 @@
 This repository contains the PyTorch implementation of the following paper:
 > **Zero-AVSR: Zero-Shot Audio-Visual Speech Recognition with LLMs by Learning Language-Agnostic Speech Representations**<be>
 ><br>
-> Authors: Jeong Hun Yeo*, Minsu Kim* (*equal contributor), Chae Won Kim, Stavros Petridis, Yong Man Ro<br>
+> Authors: Jeong Hun Yeo*, Minsu Kim*, Chae Won Kim, Stavros Petridis, Yong Man Ro (*Equal contribution)<br>
 > **Paper Link**: [http://arxiv.org/abs/2503.06273](http://arxiv.org/abs/2503.06273)
 
 
