@@ -179,6 +179,14 @@ After downloading, make sure to place the models in the correct directories:
 | [ckpt.pt](https://www.dropbox.com/scl/fi/4t6b3zrw6d2d3iwfrp37s/checkpoint_best.pt?rlkey=g01nl8yafbigyu5h0kweat106&st=7cj4ggu2&dl=1) |        All      | 82           | 
 
 
+You can download the pre-trained models using wget with the following command:
+
+```bash
+# Zero-AVSR all model
+wget -O ckpt.pt "https://www.dropbox.com/scl/fi/4t6b3zrw6d2d3iwfrp37s/checkpoint_best.pt?rlkey=g01nl8yafbigyu5h0kweat106&st=7cj4ggu2&dl=1"
+```
+
+
 
 ## Acknowledgement
 This project is based on the [avhubert](https://github.com/facebookresearch/av_hubert), [auto-avsr](https://github.com/mpc001/auto_avsr), and [fairseq](https://github.com/facebookresearch/fairseq) code. We would like to thank the developers of these projects for their contributions and the open-source community for making this work possible.
