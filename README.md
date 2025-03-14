@@ -186,6 +186,16 @@ You can download the pre-trained models using wget with the following command:
 wget -O ckpt.pt "https://www.dropbox.com/scl/fi/4t6b3zrw6d2d3iwfrp37s/checkpoint_best.pt?rlkey=g01nl8yafbigyu5h0kweat106&st=7cj4ggu2&dl=1"
 ```
 
+## Citation
+If you find this work useful in your research, please cite the paper:
+```bibtex
+@article{yeo2025zero,
+  title={Zero-AVSR: Zero-Shot Audio-Visual Speech Recognition with LLMs by Learning Language-Agnostic Speech Representations},
+  author={Yeo, Jeong Hun and Kim, Minsu and Kim, Chae Won and Petridis, Stavros and Ro, Yong Man},
+  journal={arXiv preprint arXiv:2503.06273},
+  year={2025}
+}
+```
 
 
 ## Acknowledgement
