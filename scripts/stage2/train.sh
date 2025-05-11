@@ -13,7 +13,7 @@ noise_wav=$ROOT/noise_wav/all
 
 NGPUS=7
 update_freq=9
-OUT_PATH=$ROOT/pretrained_models/zero-avsr/rus_back_trans_prob_0
+OUT_PATH=$ROOT/pretrained_models/zero-avsr/all
 
 
 export TOKENIZERS_PARALLELISM=false
@@ -26,7 +26,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6 fairseq-hydra-train \
     task.label_dir=$ROOT/marc/manifest/stage2 \
     task.llm_path=${LLM_PATH} \
     task.noise_wav=$noise_wav \
-    task.zero_shot_lang=rus \
+    task.zero_shot_lang=no \
     checkpoint.save_interval_updates=2050 \
     common.empty_cache_freq=500 \
     hydra.run.dir=${OUT_PATH} \
@@ -45,7 +45,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6 fairseq-hydra-train \
     model.lora_alpha=32 \
     optimization.update_freq=[$update_freq] \
     optimization.lr=[1e-4] \
-    optimization.max_update=50000 \
+    optimization.max_update=30000 \
     optimization.max_epoch=5 \
     distributed_training.distributed_world_size=${NGPUS} \
     distributed_training.nprocs_per_node=${NGPUS} \
